@@ -51,7 +51,7 @@ func ErrorConfigCommandCrashed(output string) {
 	})
 }
 
-// The config file is loaded before any goroutines are launched that require cleanup,
+// ErrorConfigFileInvalidJson: The config file is loaded before any goroutines are launched that require cleanup,
 // and our exitNow goroutine has not been spawned yet, so we will just explicitly exit
 // in the json-related errors..
 func ErrorConfigFileInvalidJson() {
